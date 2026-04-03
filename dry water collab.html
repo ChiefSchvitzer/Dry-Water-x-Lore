@@ -1,0 +1,887 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>DryWater × Lore — Partnership Proposal</title>
+<meta name="description" content="DryWater × Lore Partnership Proposal 2025">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&family=Playfair+Display:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
+<style>
+  *, *::before, *::after { margin: 0; padding: 0; box-sizing: border-box; }
+
+  :root {
+    --bg: #FAFAFA;
+    --white: #FFFFFF;
+    --black: #000000;
+    --text: #111111;
+    --text-mid: #555555;
+    --text-light: #888888;
+    --yellow: #F5E000;
+    --yellow-soft: #FFF9C4;
+    --border: #E0E0E0;
+    --border-light: #F0F0F0;
+    --dark-bg: #0A0A0A;
+    --dark-card: rgba(255,255,255,0.06);
+    --dark-border: rgba(255,255,255,0.12);
+    --dark-text: #FFFFFF;
+    --dark-text-mid: rgba(255,255,255,0.65);
+    --sans: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+    --serif: 'Playfair Display', Georgia, serif;
+    --radius: 12px;
+  }
+
+  html { scroll-behavior: smooth; }
+
+  body {
+    font-family: var(--sans);
+    background: var(--bg);
+    color: var(--text);
+    line-height: 1.6;
+    -webkit-font-smoothing: antialiased;
+  }
+
+  .container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 40px;
+  }
+
+  /* ─── TOPLINE ─── */
+  .topline {
+    padding: 44px 0 0;
+    font-size: 11px;
+    font-weight: 600;
+    letter-spacing: 0.2em;
+    text-transform: uppercase;
+    color: var(--text-light);
+    display: flex;
+    align-items: center;
+    gap: 12px;
+  }
+
+  .topline .dot {
+    width: 6px;
+    height: 6px;
+    border-radius: 50%;
+    background: var(--yellow);
+  }
+
+  /* ─── HERO ─── */
+  .hero {
+    padding: 24px 0 72px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 48px;
+    align-items: end;
+  }
+
+  .hero-brand h1 {
+    font-weight: 900;
+    line-height: 0.95;
+    letter-spacing: -0.03em;
+  }
+
+  .hero-brand .brand-name {
+    font-size: clamp(60px, 7.5vw, 100px);
+    color: var(--black);
+    display: block;
+  }
+
+  .hero-brand .brand-name .period {
+    color: var(--yellow);
+  }
+
+  .hero-brand .ampersand {
+    display: block;
+    font-family: var(--serif);
+    font-style: italic;
+    font-weight: 400;
+    font-size: clamp(36px, 4.5vw, 56px);
+    color: var(--border);
+    margin: 4px 0;
+  }
+
+  .hero-brand .partner-name {
+    font-family: var(--serif);
+    font-weight: 400;
+    font-size: clamp(56px, 7vw, 92px);
+    color: var(--text);
+    display: block;
+    letter-spacing: -0.01em;
+  }
+
+  .hero-copy {
+    padding-bottom: 20px;
+  }
+
+  .hero-copy .lead {
+    font-size: clamp(18px, 2vw, 22px);
+    font-weight: 400;
+    line-height: 1.65;
+    color: var(--text);
+    margin-bottom: 20px;
+  }
+
+  .hero-copy .lead strong {
+    font-weight: 700;
+    text-decoration: underline;
+    text-decoration-color: var(--yellow);
+    text-underline-offset: 3px;
+    text-decoration-thickness: 3px;
+  }
+
+  .hero-copy .sub {
+    font-size: 14px;
+    color: var(--text-mid);
+    line-height: 1.7;
+  }
+
+  .hero-divider {
+    grid-column: 1 / -1;
+    height: 1px;
+    background: var(--border);
+  }
+
+  /* ─── PHASE 2 (DARK SECTION) ─── */
+  .phase2 {
+    background: var(--dark-bg);
+    color: var(--dark-text);
+    border-radius: 16px;
+    padding: 60px 56px 56px;
+    margin-bottom: 72px;
+  }
+
+  .phase2 .section-tag {
+    font-size: 11px;
+    font-weight: 600;
+    letter-spacing: 0.2em;
+    text-transform: uppercase;
+    color: var(--yellow);
+    margin-bottom: 28px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+  }
+
+  .phase2 .section-tag::before {
+    content: '';
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    background: var(--yellow);
+  }
+
+  .phase2 h2 {
+    font-weight: 800;
+    font-size: clamp(34px, 4.2vw, 56px);
+    line-height: 1.1;
+    letter-spacing: -0.03em;
+    margin-bottom: 28px;
+  }
+
+  .phase2 h2 .accent {
+    color: var(--yellow);
+  }
+
+  .phase2 .description {
+    font-size: 15px;
+    line-height: 1.8;
+    color: var(--dark-text-mid);
+    max-width: 720px;
+    margin-bottom: 48px;
+  }
+
+  /* Stats Grid */
+  .stats-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    border-top: 1px solid var(--dark-border);
+    margin-bottom: 48px;
+  }
+
+  .stat {
+    padding: 28px 0;
+    border-right: 1px solid var(--dark-border);
+  }
+
+  .stat:last-child { border-right: none; }
+
+  .stat .number {
+    font-size: 48px;
+    font-weight: 900;
+    line-height: 1;
+    margin-bottom: 8px;
+    letter-spacing: -0.03em;
+  }
+
+  .stat .number .unit {
+    font-size: 18px;
+    font-weight: 500;
+    color: var(--yellow);
+    margin-left: 2px;
+  }
+
+  .stat .label {
+    font-size: 12px;
+    font-weight: 500;
+    color: rgba(255,255,255,0.4);
+  }
+
+  /* Included Grid */
+  .included-label {
+    font-size: 11px;
+    font-weight: 600;
+    letter-spacing: 0.2em;
+    text-transform: uppercase;
+    color: rgba(255,255,255,0.35);
+    margin-bottom: 16px;
+  }
+
+  .included-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10px;
+    margin-bottom: 48px;
+  }
+
+  .included-item {
+    background: var(--dark-card);
+    border: 1px solid var(--dark-border);
+    border-radius: 8px;
+    padding: 16px 18px;
+    font-size: 13px;
+    font-weight: 500;
+    color: rgba(255,255,255,0.85);
+    display: flex;
+    align-items: center;
+    gap: 10px;
+  }
+
+  .included-item::before {
+    content: '';
+    width: 5px;
+    height: 5px;
+    border-radius: 50%;
+    background: var(--yellow);
+    flex-shrink: 0;
+  }
+
+  /* Enhancements */
+  .enhancements-label {
+    font-size: 11px;
+    font-weight: 600;
+    letter-spacing: 0.2em;
+    text-transform: uppercase;
+    color: rgba(255,255,255,0.35);
+    margin-bottom: 16px;
+  }
+
+  .enhancements-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10px;
+    margin-bottom: 52px;
+  }
+
+  .enhancement {
+    border: 1px solid var(--dark-border);
+    border-radius: 8px;
+    padding: 24px 20px;
+  }
+
+  .enhancement .plus {
+    font-size: 20px;
+    font-weight: 800;
+    color: var(--yellow);
+    margin-bottom: 10px;
+  }
+
+  .enhancement .title {
+    font-weight: 700;
+    font-size: 14px;
+    margin-bottom: 6px;
+  }
+
+  .enhancement .desc {
+    font-size: 12px;
+    color: rgba(255,255,255,0.45);
+    line-height: 1.6;
+  }
+
+  /* Price Block */
+  .price-block {
+    border-top: 1px solid var(--dark-border);
+    padding-top: 40px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 40px;
+    align-items: start;
+  }
+
+  .price-label {
+    font-size: 11px;
+    font-weight: 600;
+    letter-spacing: 0.2em;
+    text-transform: uppercase;
+    color: rgba(255,255,255,0.35);
+    margin-bottom: 12px;
+  }
+
+  .price-amount {
+    font-size: 52px;
+    font-weight: 900;
+    line-height: 1;
+    margin-bottom: 8px;
+    letter-spacing: -0.03em;
+  }
+
+  .price-amount .per {
+    font-size: 20px;
+    font-weight: 500;
+    color: rgba(255,255,255,0.45);
+  }
+
+  .price-term {
+    font-size: 12px;
+    font-weight: 500;
+    color: rgba(255,255,255,0.4);
+  }
+
+  .price-note {
+    font-size: 14px;
+    color: rgba(255,255,255,0.6);
+    line-height: 1.75;
+  }
+
+  /* ─── PHASE 1 ─── */
+  .phase1-header {
+    margin-bottom: 44px;
+  }
+
+  .phase1-header .section-tag {
+    font-size: 11px;
+    font-weight: 600;
+    letter-spacing: 0.2em;
+    text-transform: uppercase;
+    color: var(--text-light);
+    margin-bottom: 24px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+  }
+
+  .phase1-header .section-tag .dot {
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    background: var(--yellow);
+  }
+
+  .phase1-header h2 {
+    font-weight: 700;
+    font-size: clamp(28px, 3.5vw, 44px);
+    line-height: 1.25;
+    letter-spacing: -0.02em;
+    max-width: 840px;
+  }
+
+  .phase1-header h2 .accent {
+    text-decoration: underline;
+    text-decoration-color: var(--yellow);
+    text-underline-offset: 4px;
+    text-decoration-thickness: 3px;
+  }
+
+  /* Phase 1 Cards */
+  .phase1-cards {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+    margin-bottom: 20px;
+  }
+
+  .p1-card {
+    border: 1px solid var(--border);
+    border-radius: var(--radius);
+    padding: 32px 28px;
+    background: var(--white);
+  }
+
+  .p1-card .card-tag {
+    font-size: 10px;
+    font-weight: 600;
+    letter-spacing: 0.18em;
+    text-transform: uppercase;
+    color: var(--text-light);
+    margin-bottom: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  .p1-card .card-tag .badge {
+    background: var(--yellow);
+    border-radius: 20px;
+    padding: 4px 14px;
+    font-size: 9px;
+    font-weight: 700;
+    letter-spacing: 0.12em;
+    color: var(--black);
+  }
+
+  .p1-card h3 {
+    font-weight: 800;
+    font-size: 24px;
+    line-height: 1.2;
+    margin-bottom: 16px;
+    letter-spacing: -0.02em;
+  }
+
+  .p1-card h3 .sub-title {
+    display: block;
+    font-weight: 400;
+    color: var(--text-mid);
+    font-size: 20px;
+    margin-top: 2px;
+  }
+
+  .p1-card .card-desc {
+    font-size: 13px;
+    color: var(--text-mid);
+    line-height: 1.75;
+    margin-bottom: 28px;
+  }
+
+  .p1-card .card-divider {
+    height: 1px;
+    background: var(--border-light);
+    margin-bottom: 20px;
+  }
+
+  .p1-card .card-price {
+    font-size: 28px;
+    font-weight: 900;
+    letter-spacing: -0.02em;
+    margin-bottom: 4px;
+  }
+
+  .p1-card .card-price-note {
+    font-size: 11px;
+    font-weight: 500;
+    color: var(--text-light);
+  }
+
+  .p1-card .card-footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .p1-card .card-footer .note-pill {
+    background: var(--yellow-soft);
+    border-radius: 20px;
+    padding: 5px 14px;
+    font-size: 11px;
+    font-weight: 600;
+    color: var(--text);
+  }
+
+  .p1-card .card-footer .italic-note {
+    font-style: italic;
+    font-size: 13px;
+    color: var(--text-light);
+  }
+
+  /* Bottom Grid */
+  .bottom-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+    margin-bottom: 80px;
+  }
+
+  .bottom-card {
+    border: 1px solid var(--border);
+    border-radius: var(--radius);
+    padding: 32px 28px;
+    background: var(--white);
+  }
+
+  .bottom-card .card-title {
+    font-size: 11px;
+    font-weight: 600;
+    letter-spacing: 0.18em;
+    text-transform: uppercase;
+    color: var(--text-light);
+    margin-bottom: 28px;
+  }
+
+  /* Needs List */
+  .needs-item {
+    padding: 10px 0 10px 16px;
+    border-left: 3px solid var(--yellow);
+    margin-bottom: 16px;
+  }
+
+  .needs-item:last-child { margin-bottom: 0; }
+
+  .needs-item strong {
+    display: block;
+    font-size: 13px;
+    font-weight: 700;
+    margin-bottom: 3px;
+  }
+
+  .needs-item p {
+    font-size: 12px;
+    color: var(--text-mid);
+    line-height: 1.6;
+  }
+
+  /* Steps */
+  .step {
+    display: grid;
+    grid-template-columns: 36px 1fr;
+    gap: 12px;
+    margin-bottom: 24px;
+    align-items: start;
+  }
+
+  .step:last-child { margin-bottom: 0; }
+
+  .step .step-num {
+    font-size: 13px;
+    font-weight: 700;
+    color: var(--text-light);
+    width: 28px;
+    height: 28px;
+    border: 1px solid var(--border);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .step strong {
+    display: block;
+    font-size: 13px;
+    font-weight: 700;
+    margin-bottom: 2px;
+  }
+
+  .step p {
+    font-size: 12px;
+    color: var(--text-mid);
+    line-height: 1.6;
+  }
+
+  /* ─── FOOTER ─── */
+  .site-footer {
+    background: var(--dark-bg);
+  }
+
+  .footer-inner {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 48px 40px 56px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 40px;
+    align-items: center;
+  }
+
+  .footer-brands {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+  }
+
+  .footer-brands .brand-mark {
+    font-size: 22px;
+    font-weight: 900;
+    color: var(--dark-text);
+    letter-spacing: -0.02em;
+  }
+
+  .footer-brands .brand-mark .period {
+    color: var(--yellow);
+  }
+
+  .footer-brands .x {
+    font-size: 14px;
+    color: rgba(255,255,255,0.35);
+  }
+
+  .footer-brands .lore {
+    font-family: var(--serif);
+    font-style: italic;
+    font-size: 22px;
+    color: var(--dark-text);
+    font-weight: 400;
+  }
+
+  .footer-closing {
+    font-size: 14px;
+    color: rgba(255,255,255,0.5);
+    text-align: right;
+    line-height: 1.7;
+  }
+
+  .footer-closing strong {
+    color: var(--yellow);
+    font-weight: 600;
+  }
+
+  /* ─── RESPONSIVE ─── */
+  @media (max-width: 900px) {
+    .container { padding: 0 24px; }
+    .hero { grid-template-columns: 1fr; gap: 28px; }
+    .hero-copy { padding-bottom: 0; }
+    .phase2 { padding: 40px 28px; }
+    .stats-grid { grid-template-columns: repeat(2, 1fr); }
+    .stat { border-bottom: 1px solid var(--dark-border); }
+    .included-grid { grid-template-columns: 1fr 1fr; }
+    .enhancements-grid { grid-template-columns: 1fr; }
+    .price-block { grid-template-columns: 1fr; }
+    .phase1-cards { grid-template-columns: 1fr; }
+    .bottom-grid { grid-template-columns: 1fr; }
+    .footer-inner { grid-template-columns: 1fr; gap: 20px; padding: 40px 24px 48px; }
+    .footer-closing { text-align: left; }
+  }
+
+  @media (max-width: 600px) {
+    .stats-grid { grid-template-columns: 1fr 1fr; }
+    .included-grid { grid-template-columns: 1fr; }
+    .stat .number { font-size: 36px; }
+    .p1-card .card-footer { flex-direction: column; align-items: flex-start; gap: 12px; }
+  }
+
+  /* ─── ANIMATIONS ─── */
+  .fade-in {
+    opacity: 0;
+    transform: translateY(16px);
+    transition: opacity 0.6s ease, transform 0.6s ease;
+  }
+
+  .fade-in.visible {
+    opacity: 1;
+    transform: translateY(0);
+  }
+</style>
+</head>
+<body>
+
+<div class="container">
+
+  <!-- Topline -->
+  <div class="topline fade-in">
+    <span class="dot"></span>
+    DryWater × Lore · Partnership Proposal · 2025
+  </div>
+
+  <!-- Hero -->
+  <section class="hero">
+    <div class="hero-brand fade-in">
+      <h1>
+        <span class="brand-name">DryWater<span class="period">.</span></span>
+        <span class="ampersand">&amp;</span>
+        <span class="partner-name">Lore</span>
+      </h1>
+    </div>
+    <div class="hero-copy fade-in">
+      <p class="lead">The ritual of hot and cold is the <strong>most natural home</strong> for DryWater that exists. Here's how we build something remarkable together.</p>
+      <p class="sub">We've addressed your questions directly — and made it as easy as possible to say yes.</p>
+    </div>
+    <div class="hero-divider"></div>
+  </section>
+
+  <!-- Phase 2 -->
+  <section class="phase2 fade-in">
+    <div class="section-tag">The full vision · Phase 2</div>
+    <h2>90 days. Five sessions a week.<br><span class="accent">The DryWater Sauna Club.</span></h2>
+    <p class="description">Fully privatised 75-minute sauna sessions, five days a week for 90 days. Up to 90 attendees per session — a curated mix of elite athletes, leading influencers, DryWater ambassadors, and VIP invitees. DryWater before and after, every single time. Lore handles every detail of production, curation, and logistics. DryWater owns all the content. This is what DryWater living inside the most intentional wellness community in New York looks like.</p>
+
+    <div class="stats-grid">
+      <div class="stat">
+        <div class="number">90<span class="unit">days</span></div>
+        <div class="label">Full season partnership</div>
+      </div>
+      <div class="stat">
+        <div class="number">450<span class="unit">+</span></div>
+        <div class="label">Total sessions across the partnership</div>
+      </div>
+      <div class="stat">
+        <div class="number">90<span class="unit">guests</span></div>
+        <div class="label">Per session · hand-curated</div>
+      </div>
+      <div class="stat">
+        <div class="number">0<span class="unit">lift</span></div>
+        <div class="label">No NYC ground team needed</div>
+      </div>
+    </div>
+
+    <div class="included-label">Everything included</div>
+    <div class="included-grid">
+      <div class="included-item">Celebrity or VIP host option</div>
+      <div class="included-item">Full content ownership by DryWater</div>
+      <div class="included-item">50 VIP welcome kits (gifted by DryWater)</div>
+      <div class="included-item">Affiliate link + discount code to all members</div>
+      <div class="included-item">DryWater in Lore retail throughout</div>
+      <div class="included-item">Co-branded email &amp; social comms</div>
+    </div>
+
+    <div class="enhancements-label">Optional enhancements</div>
+    <div class="enhancements-grid">
+      <div class="enhancement">
+        <div class="plus">+</div>
+        <div class="title">Partnership Kick-Off Event</div>
+        <div class="desc">A launch moment for both communities. Lore produces and curates.</div>
+      </div>
+      <div class="enhancement">
+        <div class="plus">+</div>
+        <div class="title">Co-Branded DryWater Sweat Kit</div>
+        <div class="desc">Sauna hat, towel, water bottle — DryWater branded, Lore distributed.</div>
+      </div>
+      <div class="enhancement">
+        <div class="plus">+</div>
+        <div class="title">Hero Campaign Video</div>
+        <div class="desc">Shot on-site at Lore, produced by DryWater's content team. All rights with DryWater.</div>
+      </div>
+    </div>
+
+    <div class="price-block">
+      <div>
+        <div class="price-label">Monthly membership fee</div>
+        <div class="price-amount">$22,500<span class="per">/month</span></div>
+        <div class="price-term">3-month programme · retail product at wholesale rate</div>
+      </div>
+      <div class="price-note">The only cost is the running rate for membership access to Lore. No production fees, no event costs on top. Lore absorbs all of that.</div>
+    </div>
+  </section>
+
+  <!-- Phase 1 Header -->
+  <section class="phase1-header fade-in">
+    <div class="section-tag">
+      <span class="dot"></span>
+      Start here · Phase 1
+    </div>
+    <h2>We heard you. <span class="accent">Start lean, build from there.</span> Phase 1 is built around our grand opening — the highest-energy moment to prove what DryWater and Lore can do together.</h2>
+  </section>
+
+  <!-- Phase 1 Cards -->
+  <div class="phase1-cards fade-in">
+    <div class="p1-card">
+      <div class="card-tag">
+        Phase 1 · 30-Day Launch Window
+        <span class="badge">Start here</span>
+      </div>
+      <h3>Weekly DryWater<span class="sub-title">Hydration Sessions</span></h3>
+      <p class="card-desc">A dedicated DryWater session on the Lore calendar every week — complimentary for every member and guest. Maximum community exposure, zero friction. Everyone in the building experiences DryWater at the peak moment of our grand opening energy.</p>
+      <div class="card-divider"></div>
+      <div class="card-footer">
+        <div>
+          <div class="card-price">$8,000</div>
+          <div class="card-price-note">Standard private session rate · no additional fees</div>
+        </div>
+        <div class="note-pill">Retail placement included</div>
+      </div>
+    </div>
+
+    <div class="p1-card">
+      <div class="card-tag">Phase 1 · Content Session</div>
+      <h3>DryWater Private<span class="sub-title">Content Day</span></h3>
+      <p class="card-desc">One fully privatised session within the 30 days, curated for DryWater to invite their own influencers, ambassadors, and KOLs. Designed as a content creation moment — immersive, atmospheric, and built to generate the kind of authentic material that fuels a paid media strategy. Lore handles everything. DryWater owns it all.</p>
+      <div class="card-divider"></div>
+      <div class="card-footer">
+        <div class="italic-note">Included within Phase 1</div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Bottom Grid -->
+  <div class="bottom-grid fade-in">
+    <div class="bottom-card">
+      <div class="card-title">What we need from DryWater</div>
+      <div class="needs-item">
+        <strong>Product supply</strong>
+        <p>Wholesale rate for retail + complimentary product for in-session service. Lore handles all logistics.</p>
+      </div>
+      <div class="needs-item">
+        <strong>50 VIP welcome kits</strong>
+        <p>Gifted from DryWater to our top members at launch. Lore handles all distribution.</p>
+      </div>
+      <div class="needs-item">
+        <strong>Co-branded comms</strong>
+        <p>Shared email and social to announce the partnership. We draft everything, you approve.</p>
+      </div>
+      <div class="needs-item">
+        <strong>One content day (Phase 2)</strong>
+        <p>Your team on-site for the campaign video. Fully coordinated by us.</p>
+      </div>
+    </div>
+
+    <div class="bottom-card">
+      <div class="card-title">Proposed next steps</div>
+      <div class="step">
+        <div class="step-num">1</div>
+        <div>
+          <strong>Confirm Phase 1 at $8,000</strong>
+          <p>Lock in a launch date tied to the Lore grand opening.</p>
+        </div>
+      </div>
+      <div class="step">
+        <div class="step-num">2</div>
+        <div>
+          <strong>Agree wholesale rate</strong>
+          <p>DryWater shares retail pricing. Lore places initial stock order.</p>
+        </div>
+      </div>
+      <div class="step">
+        <div class="step-num">3</div>
+        <div>
+          <strong>Confirm VIP kit gifting</strong>
+          <p>Lore provides the member list. DryWater ships directly.</p>
+        </div>
+      </div>
+      <div class="step">
+        <div class="step-num">4</div>
+        <div>
+          <strong>Launch, capture, review at 30 days</strong>
+          <p>We prove the community loves DryWater, then move into Phase 2 together.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+</div>
+
+<!-- Footer -->
+<div class="site-footer">
+  <div class="footer-inner">
+    <div class="footer-brands">
+      <span class="brand-mark">DryWater<span class="period">.</span></span>
+      <span class="x">×</span>
+      <span class="lore">lore</span>
+    </div>
+    <div class="footer-closing">
+      The sauna and cold plunge is where the DryWater practice lives. <strong>Let's start small and build something extraordinary.</strong>
+    </div>
+  </div>
+</div>
+
+<script>
+  const observer = new IntersectionObserver((entries) => {
+    entries.forEach(entry => {
+      if (entry.isIntersecting) {
+        entry.target.classList.add('visible');
+      }
+    });
+  }, { threshold: 0.1 });
+
+  document.querySelectorAll('.fade-in').forEach(el => observer.observe(el));
+</script>
+
+</body>
+</html>
